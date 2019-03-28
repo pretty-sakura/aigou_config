@@ -24,7 +24,7 @@ zuul:
   prefix: "/aigou" #加前缀，访问时必须加上/aigou前缀
 ---
 server:
-  port: 9527 #端口
+  port: 9528 #端口
 spring:
   application:
     name: MICROSERVICE-ZUUL-GATEWAY-TEST #服务名称
@@ -34,7 +34,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka #注册中心地址
   instance:
-    instance-id: gateway-9527.com #显示的名字
+    instance-id: gateway-9528.com #显示的名字
     prefer-ip-address: true #为true在鼠标指上去的时候左下角显示id
 zuul:
   routes:
