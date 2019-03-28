@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+#端口号
+server:
+  port: 8001
+eureka:
+  #服务注册
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+spring:
+  #服务名称
+  application:
+    name: PLAT-PROVIDER
+  profiles: dev #开发环境
+
+---
+#端口号
+server:
+  port: 8002
+eureka:
+  #服务注册
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+spring:
+  #服务名称
+  application:
+    name: PLAT-PROVIDER-TEST
+profiles: test #开发环境
