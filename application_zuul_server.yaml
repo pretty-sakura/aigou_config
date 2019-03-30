@@ -20,6 +20,8 @@ zuul:
   routes:
     plat.serviceId: plat-provider #服务者提供的服务的名称
     plat.pash: /plat/** #访问user-provider时，直接路由到wbUser处理
+    product.serviceId: product-provider #服务者提供的服务的名称
+    product.pash: /product/** #访问user-provider时，直接路由到wbUser处理
   ignored-services: "*" #忽略全部
   prefix: "/aigou" #加前缀，访问时必须加上/aigou前缀
 ---
