@@ -23,7 +23,7 @@ spring:
     password: 123456
 mybatis-plus:
   mapper-locations: classpath:cn/itsource/aigou/mapper/*Mapper.xml
-  type-aliases-package: cn.itsource.aigou.domain
+  type-aliases-package: cn.itsource.aigou.domain,cn.itsource.aigou.query
 ---
 #端口号
 server:
@@ -45,4 +45,4 @@ spring:
     password: 123456
 mybatis-plus:
   mapper-locations: classpath:cn/itsource/aigou/mapper/*Mapper.xml
-  type-aliases-package: cn.itsource.aigou.domain
+  type-aliases-package: cn.itsource.aigou.domain,cn.itsource.aigou.query
