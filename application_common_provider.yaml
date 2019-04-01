@@ -20,7 +20,7 @@ spring:
 #端口号
 server:
   port: 8889
-  max-http-header-size: 10000000 #Request header is too large异常解决
+  max-http-header-size: 10000000 #Request header is too large异常解决 
 eureka:
   #服务注册
   client:
