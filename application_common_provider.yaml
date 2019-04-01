@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+#端口号
+server:
+  port: 8888
+  max-http-header-size: 10000000 #Request header is too large异常解决
+eureka:
+  #服务注册
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+spring:
+  #服务名称
+  application:
+    name: COMMON-PROVIDER
+---
+#端口号
+server:
+  port: 8889
+  max-http-header-size: 10000000 #Request header is too large异常解决
+eureka:
+  #服务注册
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+spring:
+  #服务名称
+  application:
+    name: COMMON-PROVIDER-TEST
