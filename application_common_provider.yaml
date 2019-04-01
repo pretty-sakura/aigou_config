@@ -16,11 +16,12 @@ spring:
   #服务名称
   application:
     name: COMMON-PROVIDER
+  profiles: dev #开发环境
 ---
 #端口号
 server:
   port: 8889
-  max-http-header-size: 10000000 #Request header is too large异常解决 
+  max-http-header-size: 10000000 #Request header is too large异常解决
 eureka:
   #服务注册
   client:
@@ -30,3 +31,4 @@ spring:
   #服务名称
   application:
     name: COMMON-PROVIDER-TEST
+  profiles: test #开发环境
