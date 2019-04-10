@@ -17,6 +17,10 @@ spring:
   application:
     name: COMMON-PROVIDER
   profiles: dev #开发环境
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300 #java的客户端要用9300 服务器地址
 ---
 #端口号
 server:
@@ -32,3 +36,7 @@ spring:
   application:
     name: COMMON-PROVIDER-TEST
   profiles: test #开发环境
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300 #java的客户端要用9300 服务器地址
